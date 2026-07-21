@@ -21,7 +21,7 @@ services:
       COLLABORATION_CS3API_DATAGATEWAY_INSECURE: "${INSECURE:-true}"
       COLLABORATION_APP_PROOF_DISABLE: "true"
     volumes:
-      - ./config/euro-office/app-registry.yaml:/etc/opencloud/app-registry.yaml
+      # - ./config/euro-office/app-registry.yaml:/etc/opencloud/app-registry.yaml
 
   euro-office:
     image: ${EURO_OFFICE_DOCKER_IMAGE:-ghcr.io/euro-office/documentserver}:${EURO_OFFICE_DOCKER_TAG:-latest}
